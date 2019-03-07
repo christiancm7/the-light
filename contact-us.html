@@ -55,6 +55,8 @@
         <link rel="stylesheet" href="css/style.css" />
         <!-- responsive css -->
         <link rel="stylesheet" href="css/responsive.css" />
+         <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!--[if IE]>
             <script src="js/html5shiv.js"></script>
         <![endif]-->
@@ -141,6 +143,7 @@
                                     <div id="success-contact-form" class="no-margin-lr"></div>
                                     <input type="text" name="name" id="name" placeholder="Name*" class="border-radius-4 bg-white medium-input">
                                     <input type="text" name="email" id="email" placeholder="E-mail*" class="border-radius-4 bg-white medium-input">
+                                    <input type="text" class="datepicker">
                                     <input type="text" name="subject" id="subject" placeholder="Subject" class="border-radius-4 bg-white medium-input">
                                     <textarea name="comment" id="comment" placeholder="Your Message" rows="5" class="border-radius-4 bg-white medium-textarea"></textarea>
                                     <button id="contact-us-button" type="submit" class="btn btn-small border-radius-4 btn-dark-gray">send message</button>
@@ -313,6 +316,12 @@
     <!-- revolution -->
     <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+        const Calender = document.querySelector('.datepicker');
+        M.Datepicker.init(Calender, {});
+        </script>
     <!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
     <!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
     <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
